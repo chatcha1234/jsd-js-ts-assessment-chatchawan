@@ -105,8 +105,10 @@
 
 # <p style="display: flex; align-items: center; gap: 0.5em;"><span style="font-weight:bold; color: white; background-color: lightSeaGreen; padding: 0.5rem 2rem;">WRITE YOUR THINKING PROCESS BELOW.</span><span style="font-weight:bold; color: white; background-color: lightSeaGreen; padding: 0.5rem 0;">&nbsp;</span></p>
 
-<!-- Thinking Process -->
-<!-- 1. Workflow Planning -->
+Thinking Process
+
+
+1. Workflow Planning
 <!-- 2.1. Board Functions (Hardcoded) -->
 <!-- 2.2. Board Functions (Generated) -->
 <!-- 3. Input Functions -->
