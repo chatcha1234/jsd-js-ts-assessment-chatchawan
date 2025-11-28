@@ -109,6 +109,19 @@ Thinking Process
 
 
 1. Workflow Planning
+    *** 1.เริ่มเกมส์ (Start Game) *** : กำหนดค่าเริ่มต้นของเกมส์
+    * เลือกว่าสร้างกระดานเอง(Hardcode) หรือ แบบสุ่ม (Generated)
+    * กำหนดตำแหน่งเริ่มต้น
+    * กำหนดสถานะเกมเป็นกำลังเล่น
+    * แสดงกระดานบน Terminal
+    *** 2.รับค่าจากผู้เล่น (Read Input) *** :
+    * ตรวจสอบความถูกต้องของ Input ถ้าไม่ถูกต้อง ต้องถามใหม่
+    * 
+    *** 3.ตรวจสอบความถูกต้อง (Update position)
+    *** 4.ตรวจสอบกฎของเกมส์ (Check Rules)
+    *** 5.ตรวจสอบสถานะเกมส์ 
+
+
 <!-- 2.1. Board Functions (Hardcoded) -->
 <!-- 2.2. Board Functions (Generated) -->
 <!-- 3. Input Functions -->
