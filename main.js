@@ -1,30 +1,34 @@
 "use strict";
-import promptSync from "prompt-sync";  // นำเข้า library ที่จำเป็น
+import promptSync from "prompt-sync";
 
-const prompt = promptSync({ sigint: true }); // รับค่าผู้ใช้ใน Terminal ผ่านปุ่ม
+const prompt = promptSync({ sigint: true });
 
-// Board tiles // กำหนดสัญลักษณ์
-const PLAYER = "*"; // ผู้เล่น
-const EMPTY = "░"; // พื้นที่ว่าง
-const HOLE = "O"; // หลุม
-const HAT = "^";  // ผูหมวก - เป้าหมายที่ใช้ตามหา
+// Board tiles
+const PLAYER = "*";
+const EMPTY = "░";
+const HOLE = "O";
+const HAT = "^";
 
-// Hardcoded board กระดานเกมส์ กำหนด Array 2 มิติ ขนาด 3*3
+// Hardcoded board
 let board = [
 	[PLAYER, EMPTY, HOLE],
 	[EMPTY, HOLE, EMPTY],
 	[EMPTY, HAT, EMPTY],
 ];
 
-// Game state  // เก็บตำแหน่งของผู้เล่น
-let playerRow = 0; // แถว
-let playerCol = 0; // คอลัม
-let playing = true; // สถานะการเล่น
+// Game state
+let playerRow = 0;
+let playerCol = 0;
+let playing = true;
 
 // Print board
 function printBoard(board) {
 	console.clear(); // call console.clear() before print each move
-	console.log(board); 
+
+	board.forEach(row => {
+		console.log(row.join(''));		
+	});    // วนลูปครั้งละ แถวใน array ใช้ตัวแปร row เก็บค่า หลังจากนั้น นำมา join แลัว log ออกมาจนครบ 3 แถว
+	
 }
 
 // Game play loop
